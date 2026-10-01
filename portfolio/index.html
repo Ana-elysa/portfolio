@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ana Elysa | Portfólio</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+
+    <div class="header">
+
+        <div class="texto-header">
+
+            <small>PORTFÓLIO</small>
+
+            <h1>Ana Elysa</h1>
+
+        </div>
+
+        <div class="foto">
+
+            <img src="euu.png" alt="Ana Elysa">
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<nav>
+
+    <a href="#sobre">Sobre</a>
+
+    <a href="#projetos">Projetos</a>
+
+    <a href="#certificados">Certificados</a>
+
+    <a href="#contato">Contato</a>
+
+</nav>
+
+
+<main>
+
+<section id="sobre">
+
+    <div class="titulo">
+
+        <span>01</span>
+
+        <div>
+
+            <small>SOBRE</small>
+
+            <h2>Sobre mim</h2>
+
+        </div>
+
+    </div>
+
+
+    <div class="box">
+
+        <h3>Olá, eu sou a Ana Elysa.</h3>
+
+        <p>
+            Escreva aqui uma apresentação sobre você.
+        </p>
+
+        <p>
+            Escreva aqui sua formação, interesses e objetivos.
+        </p>
+
+        <p>
+            Adicione aqui outras informações que considerar importantes.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section id="projetos">
+
+    <div class="titulo">
+
+        <span>02</span>
+
+        <div>
+
+            <small>TRABALHOS</small>
+
+            <h2>Projetos</h2>
+
+        </div>
+
+    </div>
+
+
+    <div class="projetos">
+
+        <div class="projeto" onclick="abrir(1)">
+
+            <small>01</small>
+
+            <img src="projeto1.jpg" alt="Projeto 1">
+
+            <h3>Projeto 1</h3>
+
+            <p>Descrição do projeto.</p>
+
+        </div>
+
+
+        <div class="projeto" onclick="abrir(2)">
+
+            <small>02</small>
+
+            <img src="projeto2.jpg" alt="Projeto 2">
+
+            <h3>Projeto 2</h3>
+
+            <p>Descrição do projeto.</p>
+
+        </div>
+
+
+        <div class="projeto" onclick="abrir(3)">
+
+            <small>03</small>
+
+            <img src="projeto3.jpg" alt="Projeto 3">
+
+            <h3>Projeto 3</h3>
+
+            <p>Descrição do projeto.</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section id="certificados">
+
+    <div class="titulo">
+
+        <span>03</span>
+
+        <div>
+
+            <small>FORMAÇÃO</small>
+
+            <h2>Certificados</h2>
+
+        </div>
+
+    </div>
+
+
+    <div class="carrossel">
+
+        <button class="seta" onclick="anterior()">←</button>
+
+
+        <div class="cert-area">
+
+            <div class="cert-list" id="certList">
+
+                <div class="cert">
+                    <img src="certificado1.jpg" alt="Certificado 1">
+                    <h3>Certificado 1</h3>
+                </div>
+
+                <div class="cert">
+                    <img src="certificado2.jpg" alt="Certificado 2">
+                    <h3>Certificado 2</h3>
+                </div>
+
+                <div class="cert">
+                    <img src="certificado3.jpg" alt="Certificado 3">
+                    <h3>Certificado 3</h3>
+                </div>
+
+                <div class="cert">
+                    <img src="certificado4.jpg" alt="Certificado 4">
+                    <h3>Certificado 4</h3>
+                </div>
+
+                <div class="cert">
+                    <img src="certificado5.jpg" alt="Certificado 5">
+                    <h3>Certificado 5</h3>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <button class="seta" onclick="proximo()">→</button>
+
+    </div>
+
+</section>
+
+
+<section id="contato">
+
+    <div class="titulo">
+
+        <span>04</span>
+
+        <div>
+
+            <small>CONTATO</small>
+
+            <h2>Redes sociais</h2>
+
+        </div>
+
+    </div>
+
+
+    <div class="contatos">
+
+        <div class="contato">
+
+            <div class="icone"></div>
+
+            <div>
+
+                <small>INSTAGRAM</small>
+
+                <strong>@euuoliveiraa._</strong>
+
+            </div>
+
+        </div>
+
+
+        <div class="contato">
+
+            <div class="icone"></div>
+
+            <div>
+
+                <small>WHATSAPP</small>
+
+                <strong>+55 12 99124-0286</strong>
+
+            </div>
+
+        </div>
+
+
+        <div class="contato">
+
+            <div class="icone"></div>
+
+            <div>
+
+                <small>E-MAIL</small>
+
+                <strong>anaelysadeoliveira@gmail.com</strong>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<footer>
+
+    <span>Portfólio</span>
+
+    <span>Ana Elysa • 2026</span>
+
+</footer>
+
+
+<div class="modal" id="modal">
+
+    <div class="modal-box">
+
+        <button onclick="fechar()">×</button>
+
+        <img id="modalImagem">
+
+        <h2 id="modalTitulo"></h2>
+
+        <p id="modalTexto"></p>
+
+    </div>
+
+</div>
+
+
+<script>
+
+let posicao = 0;
+
+let lista = document.getElementById("certList");
+
+let certificados = document.querySelectorAll(".cert");
+
+
+function mover() {
+
+    let tamanho = certificados[0].offsetWidth + 20;
+
+    lista.style.transform =
+        "translateX(-" + posicao * tamanho + "px)";
+
+}
+
+
+function proximo() {
+
+    posicao++;
+
+    if (posicao >= certificados.length) {
+        posicao = 0;
+    }
+
+    mover();
+
+}
+
+
+function anterior() {
+
+    posicao--;
+
+    if (posicao < 0) {
+        posicao = certificados.length - 1;
+    }
+
+    mover();
+
+}
+
+
+function abrir(n) {
+
+    let titulo = document.getElementById("modalTitulo");
+
+    let texto = document.getElementById("modalTexto");
+
+    let imagem = document.getElementById("modalImagem");
+
+
+    let projetos = [
+
+        ["Projeto 1", "Descrição do projeto 1.", "projeto1.jpg"],
+        ["Projeto 2", "Descrição do projeto 2.", "projeto2.jpg"],
+        ["Projeto 3", "Descrição do projeto 3.", "projeto3.jpg"]
+    ];
+
+
+    titulo.innerHTML = projetos[n - 1][0];
+
+    texto.innerHTML = projetos[n - 1][1];
+
+    imagem.src = projetos[n - 1][2];
+
+
+    document.getElementById("modal").style.display = "flex";
+
+}
+
+
+function fechar() {
+
+    document.getElementById("modal").style.display = "none";
+
+}
+
+</script>
+
+
+</body>
+
+</html>

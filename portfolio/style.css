@@ -1,0 +1,378 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f3f0e8;
+    color: #202020;
+    font-family: "DM Sans", sans-serif;
+}
+
+header {
+    background: #a9d8f5;
+    border-bottom: 1px solid #ddd;
+}
+
+.header {
+    width: 90%;
+    max-width: 1350px;
+    min-height: 400px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+small {
+    color: #777;
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Playfair Display", serif;
+}
+
+h1 {
+    font-size: 85px;
+    margin: 10px 0;
+}
+
+.texto-header p {
+    color: #555;
+    font-weight: 600;
+}
+
+.foto {
+    width: 220px;
+    height: 220px;
+    background: white;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: .3s;
+    box-shadow: 0 8px 20px #aaa;
+}
+
+.foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.foto:hover {
+    transform: scale(1.06);
+    box-shadow: 0 12px 25px #999;
+}
+
+nav {
+    background: white;
+    padding: 17px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    border-bottom: 1px solid #ddd;
+}
+
+nav a {
+    color: #202020;
+    text-decoration: none;
+    margin: 0 25px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: #527da0;
+}
+
+section {
+    width: 90%;
+    max-width: 1350px;
+    margin: 35px auto;
+    padding: 38px;
+    background: #ffea9b;
+    border-radius: 14px;
+}
+
+.titulo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 28px;
+}
+
+.titulo > span {
+    background: #527da0;
+    color: white;
+    padding: 11px 13px;
+    border-radius: 5px;
+}
+
+.titulo h2 {
+    font-size: 36px;
+}
+
+.box {
+    background: white;
+    padding: 32px;
+    border-radius: 10px;
+}
+
+.box h3 {
+    font-size: 27px;
+    margin-bottom: 16px;
+}
+
+.box p {
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 12px;
+    font-size: 15px;
+}
+
+.projetos {
+    display: flex;
+    gap: 24px;
+}
+
+.projeto {
+    flex: 1;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.projeto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px #bbb;
+}
+
+.projeto > small {
+    color: #777;
+}
+
+.projeto img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 15px 0;
+}
+
+.projeto h3 {
+    font-size: 23px;
+    margin-bottom: 8px;
+}
+
+.projeto p {
+    color: #666;
+    line-height: 1.5;
+}
+
+.carrossel {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.carrossel > button {
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+    background: white;
+    border: 0;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.cert-area {
+    flex: 1;
+    overflow: hidden;
+}
+
+.cert-list {
+    display: flex;
+    gap: 20px;
+    transition: .4s;
+}
+
+.cert {
+    min-width: 300px;
+    background: white;
+    padding: 14px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px #ddd;
+}
+
+.cert img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 7px;
+}
+
+.cert h3 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.seta:hover {
+    background: #a9d8f5;
+}
+
+.contatos {
+    display: flex;
+    gap: 20px;
+}
+
+.contato {
+    flex: 1;
+    background: white;
+    padding: 18px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.icone {
+    width: 45px;
+    height: 45px;
+    background: #ffea9b;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contato small {
+    display: block;
+}
+
+.contato strong {
+    font-size: 13px;
+}
+
+footer {
+    background: #202020;
+    color: white;
+    padding: 28px 8%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+}
+
+.modal {
+    position: fixed;
+    inset: 0;
+    background: #0008;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.modal-box {
+    width: 500px;
+    max-width: 100%;
+    background: #ffea9b;
+    padding: 35px;
+    border-radius: 12px;
+    text-align: center;
+    position: relative;
+}
+
+.modal-box > button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 32px;
+    height: 32px;
+    border: 0;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#modalImagem {
+    width: 100%;
+    max-height: 280px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.modal-box h2 {
+    margin: 10px 0;
+}
+
+.modal-box p {
+    color: #555;
+}
+
+@media (max-width: 800px) {
+
+    .header {
+        width: 94%;
+        padding: 45px 20px;
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    h1 {
+        font-size: 55px;
+    }
+
+    .foto {
+        width: 180px;
+        height: 180px;
+    }
+
+    .projetos,
+    .contatos {
+        flex-direction: column;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px 10px;
+    }
+
+    section {
+        width: 94%;
+        padding: 25px;
+    }
+
+    .cert {
+        min-width: 250px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    h1 {
+        font-size: 48px;
+    }
+
+    .foto {
+        width: 160px;
+        height: 160px;
+    }
+
+    .cert {
+        min-width: 230px;
+    }
+}
